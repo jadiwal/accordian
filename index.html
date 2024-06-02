@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+    
+    .accordian-item{
+        /* border: 2px solid black; */
+        width: 400px;
+        margin: auto;
+        /* position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+        /* padding: 10px; */
+        
+    }
+    .questions{
+        background-color: rgb(226, 46, 46);
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .answer{
+        background-color: papayawhip;
+        padding: 8px;
+    }
+</style>
+</head>
+<body>
+
+<div class="accordian-item">
+    <div class='accordian1 questions'>Question1</div>
+    <div class="answer1 answer">Answer 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. In, culpa amet? Corrupti ab inventore maiores    rem optio ratione quos labore.</div>
+</div>
+
+<div class="accordian-item">
+    <div class='accordian2 questions'>Question2</div>
+    <div class="answer2 answer">Answer 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad error porro temporibus sapiente, minus unde officiis recusandae non odit!</div>
+</div>
+
+<div class="accordian-item">
+    <div class='accordian3 questions'>Question3</div>
+    <div class="answer3 answer">Answer 3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis aut quo labore. Explicabo, minima reiciendis debitis amet impedit facilis ut!</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.answer1, .answer2, .answer3').hide();
+
+        $(".accordian1").click(function(){
+            $(".answer1").slideToggle();
+            $('.answer2, .answer3').hide(500)
+        });
+        
+        $(".accordian2").click(function(){
+            $(".answer2").slideToggle();
+            $('.answer1, .answer3').hide(500)
+        });
+
+        $(".accordian3").click(function(){
+            $(".answer3").slideToggle();
+            $('.answer1, .answer2').hide(500)
+        });
+    });
+    </script>
+</body>
+</html>

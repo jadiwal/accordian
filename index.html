@@ -1,31 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<style>
-    
-    .accordian-item{
-        /* border: 2px solid black; */
-        width: 400px;
-        margin: auto;
-        /* position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%); */
-        /* padding: 10px; */
-        
-    }
-    .questions{
-        background-color: rgb(226, 46, 46);
-        padding: 10px;
-        color: #fff;
-        cursor: pointer;
-    }
-    .answer{
-        background-color: papayawhip;
-        padding: 8px;
-    }
-</style>
+    <title>Accordian Design</title>
 </head>
 <body>
 
@@ -48,25 +24,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<script>
-    $(document).ready(function(){
-        $('.answer1, .answer2, .answer3').hide();
-
-        $(".accordian1").click(function(){
-            $(".answer1").slideToggle();
-            $('.answer2, .answer3').hide(500)
-        });
-        
-        $(".accordian2").click(function(){
-            $(".answer2").slideToggle();
-            $('.answer1, .answer3').hide(500)
-        });
-
-        $(".accordian3").click(function(){
-            $(".answer3").slideToggle();
-            $('.answer1, .answer2').hide(500)
-        });
-    });
-    </script>
 </body>
 </html>

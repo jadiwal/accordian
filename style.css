@@ -1,0 +1,22 @@
+  
+    .accordian-item{
+        /* border: 2px solid black; */
+        width: 400px;
+        margin: auto;
+        /* position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+        /* padding: 10px; */
+        
+    }
+    .questions{
+        background-color: rgb(226, 46, 46);
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .answer{
+        background-color: papayawhip;
+        padding: 8px;
+    }
